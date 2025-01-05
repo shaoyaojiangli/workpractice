@@ -1,13 +1,19 @@
-#include <stdio.h>
 
-extern int Add(int x, int y);
+// 计算200-400内不能被3整除的数的和
+#include <stdio.h>
 
 int main()
 {
-    int a = 78;
-    int b = 23;
-    int sum = Add(a, b);
-    printf("%d", sum);
+    int i = 0;
+    int sum = 0;
+    for (i = 200; i <= 400; i++)
+    {
+        if (i % 3)
+            sum += i;
+        else
+            continue;
+    }
+    printf("200-400内不能被3整除的数的和是：%d\n", sum);
 
     return 0;
 }
