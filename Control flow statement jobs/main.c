@@ -4,8 +4,8 @@ extern int Add(int x, int y);
 
 int main()
 {
-    int a = 10;
-    int b = 20;
+    int a = 20;
+    int b = 30;
     int sum = Add(a, b);
     printf("%d", sum);
 
