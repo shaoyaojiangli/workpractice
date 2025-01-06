@@ -3,17 +3,17 @@
 #include <stdio.h>
 int main()
 {
-    long a, n, x;
-    long sum = 0;
+    int a, n, x;
+    int sum = 0;
 
     printf("请输入0-9的数字与位数:");
-    scanf("%ld %ld", &a, &n);
+    scanf("%d %d", &a, &n);
     for (int i = 1; i <= n; i++)
     {
         x = x * 10 + a;
         sum += x;
     }
-    printf("%ld位 %ld + %ld%ld + %ld%ld%ld  ...的和是：%ld\n",
+    printf("%d位 %d + %d%d + %d%d%d  ...的和是：%d\n",
            n, a, a, a, a, a, a, sum);
     return 0;
 }
