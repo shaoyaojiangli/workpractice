@@ -3,10 +3,11 @@
 #include <stdio.h>
 int main()
 {
-    char n = 10, arr[n];
+    int n = 10;
+    char arr[n];
     int i = 0;
     printf("请输入密码：");
-    fgets(arr, n, stdin);
+    fgets(arr, 10, stdin);
     // scanf("%s", arr);
     for (i = 0; arr[i] != '\0'; i++)
     {
