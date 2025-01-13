@@ -4,7 +4,7 @@
 int main()
 {
     int n = 0, i = 0;
-    int arr[10];
+    int arr[16] = {0};
 
     printf("请输入一个十进制数：");
     scanf("%d", &n);
@@ -14,7 +14,12 @@ int main()
         i++;
         n /= 2;
     }
+
     printf("二进制数是：");
-    for (i -= 1; i >= 0; i--)
-        printf("%d ", arr[i]);
+    for (i = 15; i >= 0; i--)
+    {
+        if ((i + 1) % 4 == 0)
+            printf(" ");
+        printf("%d", arr[i]);
+    }
 }

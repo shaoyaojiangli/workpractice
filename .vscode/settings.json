@@ -204,6 +204,9 @@
     "interval": 0,
     "random": false
   },
+  "files.associations": {
+    "stdio.h": "c"
+  },
 
 
 
