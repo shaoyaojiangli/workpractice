@@ -6,7 +6,7 @@ int main()
 
     printf("你要输入的个数：");
     scanf("%d", &n);
-    int arr[n];
+    int arr[n]; // 0
     printf("请输入要排序的数列：");
 
     for (int i = 0; i < n; i++)

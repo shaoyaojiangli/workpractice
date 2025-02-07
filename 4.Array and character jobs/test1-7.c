@@ -4,11 +4,12 @@
 int main()
 {
     int n = 10;
+
     char arr[n];
     int i = 0;
-    printf("请输入密码：");
+    // printf("请输入密码：");
     fgets(arr, 10, stdin);
-    // scanf("%s", arr);
+    scanf("%s", arr);
     for (i = 0; arr[i] != '\0'; i++)
     {
         if (arr[i] >= 65 && arr[i] < 90)

@@ -9,7 +9,7 @@
     "KeilAssistant.MDK.Uv4Path": "\"D:\\keil5\\UV4\\UV4.exe\"",
     "editor.fontLigatures": false,
     
-
+    
     "files.autoGuessEncoding": true,
     "editor.smoothScrolling": true,
     "workbench.list.smoothScrolling": true,
@@ -132,7 +132,8 @@
 
     "javascript": "node",
     "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-    "c": "cd $dir && gcc *.c -fexec-charset=gbk -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    //"c": "cd $dir && gcc *.c -fexec-charset=gbk -o $fileNameWithoutExt && //$dir$fileNameWithoutExt",
+    "c": "cd $dir && gcc $fileName -fexec-charset=gbk -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
     "zig": "zig run",
     "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
     "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
@@ -188,25 +189,28 @@
     "pkl": "cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
     "gleam": "gleam run -m $fileNameWithoutExt"
   },
-  "background.editor": {
-    "useFront": true,
-    "style": {
-      "background-position": "100% 100%",
-      "background-size": "auto",
-      "opacity": 0.6
-    },
-    "styles": [
-      {},
-      {},
-      {}
-    ],
-    "images": [],
-    "interval": 0,
-    "random": false
-  },
   "files.associations": {
     "stdio.h": "c"
   },
+  // "background.editor": {
+  //   "useFront": true,
+  //   "style": {
+  //     "background-position": "100% 100%",
+  //     "background-size": "auto",
+  //     "opacity": 0.6
+  //   },
+  //   "styles": [
+  //     {},
+  //     {},
+  //     {}
+  //   ],
+  //   "images": [],
+  //   "interval": 0,
+  //   "random": false
+  // },
+  // "files.associations": {
+  //   "stdio.h": "c"
+  // },
 
 
 
