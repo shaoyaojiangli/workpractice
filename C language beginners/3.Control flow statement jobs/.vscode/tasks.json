@@ -8,8 +8,8 @@
 			"args": [
 				"-fdiagnostics-color=always",
 				"-g",
-				//"${file}",
-				"${workspaceFolder}\\*.c", //工作空间内的所有C文件都要编译
+				"${file}",
+				//"${workspaceFolder}\\*.c", //工作空间内的所有C文件都要编译
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe"
 				//"${workspaceFolder}\\${workspaceRootFolderName}.exe"  //输出文件名称
