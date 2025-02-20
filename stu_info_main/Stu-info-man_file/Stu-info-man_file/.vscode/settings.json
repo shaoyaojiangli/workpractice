@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "utils.h": "c",
+        "public.h": "c",
+        "file_info.h": "c"
+    }
+}

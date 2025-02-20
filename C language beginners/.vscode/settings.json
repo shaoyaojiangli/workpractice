@@ -190,7 +190,8 @@
     "gleam": "gleam run -m $fileNameWithoutExt"
   },
   "files.associations": {
-    "stdio.h": "c"
+    "stdio.h": "c",
+    "SD.C": "cpp"
   },
   // "background.editor": {
   //   "useFront": true,
